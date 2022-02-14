@@ -1,1 +1,1 @@
-# batman-inv
+# batman-int - учебный проект

@@ -35,6 +35,104 @@ h6 {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 113.5rem; 
+  margin: 0 auto;
+}
+
+/*сетка*/
+@media (max-width: 108em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 105em) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 91.5em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 91em) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 90em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 80em) {
+    html {
+        font-size: 7.2px
+    }
+}
+
+@media (max-width: 72em) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 64em) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+
+
+@media (max-width: 44em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 38em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 34em) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 26em) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (max-width: 21em) {
+    html {
+        font-size: 4.4px;
+    }
+}
+
+/*сетка*/
+
 .header {
   position: absolute;
   padding-bottom: 6.4rem;
@@ -48,10 +146,7 @@ h6 {
   align-items: center;
 }
 
-.container {
-  width: 113.5rem; 
-  margin: 0 auto;
-}
+
 .header__menu{
   display: flex;
   align-items: center;
@@ -73,6 +168,9 @@ h6 {
   font-size: 1.4rem;
   line-height: 114%;
 }
+.header__socials {
+  display: flex;
+}
 .header__socials-icon {
   width: 1.7rem;
   height: 1.6rem;
@@ -80,6 +178,12 @@ h6 {
 }
 .header__socials-icon:not(:last-child){
   margin-right: 2rem;
+}
+
+.header__nav-mobile,
+ .header__menu-close,
+  .menu-burger {
+    display: none;
 }
 /* ============================== main =================== */
 .main {
@@ -172,6 +276,8 @@ h6 {
 }
 .play-icon{
   margin-left: 10px;
+  width: 3.5rem;
+  height: 4rem;
 }
 .main__button {
   display: flex;
@@ -247,7 +353,7 @@ h6 {
 }
 
 .footer__menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .footer__menu li a {
@@ -265,4 +371,120 @@ h6 {
 font-size: 1.4rem;
 line-height: 143%;
 color: #686767;
+}
+
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+      width: 100%;  
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+
+
+    .header {
+        width: 69.4%;
+        background: #151515cc;
+        top: 0;
+        transform: translate(-28%,0);
+        padding-top: 4rem;
+        padding-top: 4rem;
+        z-index: 10;
+        display: none;
+    }
+
+    .header__logo{
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+    }
+
+    .header__socials{
+        margin-bottom: 2.2rem;
+    }
+
+    .header .container, 
+    .header__nav, 
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav-mobile{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header__nav-mobile a{
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 114%;
+    }
+
+    .header__nav-mobile a{
+        display: inline-block;   
+    }
+
+    .header__nav-mobile a:not(:last-child){
+        margin-bottom: 1.7rem;
+    }
+
+    .header__menu-close {
+        display: block;
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        width: 2.3rem;
+        height: 2.3rem;
+        cursor: pointer;
+    }
+
+    .menu-burger {
+        display: block;
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 0%;
+        right: 5%;
+        cursor: pointer;
+    }
+    
+    .main{
+        background-position-x: 66%;
+    }
+
+    .main__description-wrap{
+        flex-direction: column;
+        margin-bottom: 5rem;
+
+    }
+    .main__button-play{
+        margin-left: 0;
+    }
+
+    .main__button {
+        margin-bottom: 4.4rem;
+    }
+    .main-slider__arrow{
+        display: none;
+    }
+
+    .main-slider__wrap{
+        max-width: 53.5%;
+    }
+
+    .footer .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
